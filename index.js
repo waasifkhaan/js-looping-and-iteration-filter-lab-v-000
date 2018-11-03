@@ -7,7 +7,12 @@ function findMatching(drivers,string){
     }
   }
   return newCollection;
+}
 
+function findMatching(drivers,string){
+  return drivers.filter(function(driverName){
+    return driverName.toLowerCase() === string.toLowerCase
+  })
 }
 
 function fuzzyMatch(drivers,string){
