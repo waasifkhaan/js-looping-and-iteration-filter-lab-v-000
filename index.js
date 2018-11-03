@@ -1,13 +1,5 @@
 // Code your solution in this file
-function findMatching(drivers,string){
-  const newCollection = [];
-  for (const driver of drivers){
-    if(driver.toLowerCase() === string.toLowerCase()){
-    newCollection.push(driver);
-    }
-  }
-  return newCollection;
-}
+
 
 function findMatching(drivers,string){
   return drivers.filter(function(driverName){
